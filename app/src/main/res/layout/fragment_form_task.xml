@@ -55,7 +55,7 @@
                 <RadioButton
                     android:layout_width="88dp"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@color/black"
+                    android:buttonTint="@color/white"
                     android:id="@+id/rbTodo"
                     android:text="A Fazer"
                     android:layout_weight="1"
@@ -63,7 +63,7 @@
                 <RadioButton
                     android:layout_width="88dp"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@color/black"
+                    android:buttonTint="@color/white"
                     android:id="@+id/rbDoing"
                     android:text="Fazendo"
                     android:layout_weight="1"
@@ -84,14 +84,27 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@drawable/bg_btn"
-            android:backgroundTint="@null"
+            app:backgroundTint="@null"
             android:text="Salvar"
-            android:textAllCaps="false"
             android:textColor="@color/color_default"
+            android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"  />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/white"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSave"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
